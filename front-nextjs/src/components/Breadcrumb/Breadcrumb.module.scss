@@ -1,0 +1,31 @@
+@use '../../styles/variables' as v;
+
+ul.breadcrumb {
+  margin: 0 0 16px 0;
+  justify-content: flex-start;
+  align-items: center;
+
+  * {
+    color: v.$ml-grey;
+    font-size: 14px;
+    font-weight: 300;
+    list-style: none;
+  }
+
+  li {
+    display: inline;
+
+    a {
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  li + li:before {
+    content: '>';
+    margin: 0 0.5rem;
+  }
+}

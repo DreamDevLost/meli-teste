@@ -1,0 +1,91 @@
+@import '../../styles/variables.scss';
+
+.product {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+    .top {
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+
+        img {
+            width: 680px;
+            height: auto;
+        }
+    
+        .pricing {
+            display: flex;
+            flex-direction: column;
+            margin: 32px;
+            width: 25%;
+            
+            .soldInfo {
+                font-size: 14px;
+                font-weight: 300;
+                margin-bottom: 16px;
+            }
+
+            .title {
+                font-size: 24px;
+                font-weight: 700;
+                color: $ml-grey;
+                margin: 16px 0;
+            }
+    
+            .price {
+                font-size: 46px;
+                color: $ml-grey;
+                margin: 16px 0;
+            }
+    
+            .subtitle {
+                font-size: 16px;
+                font-weight: 400;
+                color: $ml-grey;
+                margin: 16px 0;
+            }
+    
+            button {
+                padding: 16px;
+                border: none;
+                border-radius: $border-radius;
+                background-color: $ml-blue;
+                color: white;
+                font-size: 16px;
+                font-weight: 700;
+                margin: 16px 0;
+                cursor: pointer;
+                width: 100%;
+    
+                // &:hover {
+                //     background-color: $ml-lightYellow;
+                // }
+            }
+        }
+    }
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        margin: 32px;
+
+        .title {
+            font-size: 28px;
+            // font-weight: 700;
+            color: $ml-grey;
+            margin: 16px 0;
+        }
+
+        .text {
+            font-size: 16px;
+            font-weight: 300;
+            color: $ml-grey;
+            margin: 16px 0;
+        }
+    }
+}

@@ -1,0 +1,55 @@
+@use '../../styles/variables' as v;
+
+.list {
+  display: grid;
+  gap: 0.5rem;
+  // margin: 16px 0;
+  width: 100%;
+  //padding: 1rem;
+
+  .item {
+    padding: 16px;
+    display: flex;
+    background-color: white;
+
+    * {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      height: 180px;
+      width: 180px;
+      border-radius: 4px;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+      margin: 0 0 0 16px;
+
+      .price {
+        font-size: 24px;
+        //font-weight: 700;
+        color: v.$ml-grey;
+        margin: 16px 0;
+      }
+
+      .title {
+        font-size: 16px;
+        font-weight: 400;
+        color: v.$ml-grey;
+        margin: 16px 0;
+      }
+    }
+
+    .from {
+      font-size: 12px;
+      font-weight: 300;
+      color: v.$ml-grey;
+      margin: 32px auto 0 auto;
+      text-wrap: nowrap;
+    }
+  }
+}
